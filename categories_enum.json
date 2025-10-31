@@ -1,0 +1,8 @@
+{
+    "$schema": "https://github.com/TNRIS/stac_extensions_txgio/categories_enum.json",
+    "$id": "https://data.tnris.org/schema.json",
+    "title": "Categories",
+    "description": "An array of categories this collection belongs to.",
+    "type": "array",
+    "enum": ["placeholder"]
+}
