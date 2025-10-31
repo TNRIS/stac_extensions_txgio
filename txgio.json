@@ -20,7 +20,7 @@
                     "type": "string"
                 },
                 "txgio:categories": {
-                    "$ref": "txgio.json"
+                    "$ref": "./categories_enum.json"
                 },
                 "txgio:acquisition_date": {
                     "title": "Acquisition Date",
