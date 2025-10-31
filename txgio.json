@@ -1,0 +1,209 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://github.com/TNRIS/stac_extensions_txgio/new/main",
+    "title": "TNRIS STAC schema",
+    "description": "Metadata STAC Extension for STAC Items and STAC Collections pertaining to TxGIO. Meant to be used on collection.",
+    "type": "object",
+    "allOf": [
+        {"$ref": "#/definitions/txgio"}
+    ],
+    "definitions": {
+        "txgio": {
+            "required": ["txgio:collection_id", "txgio:categories"],
+            "properties": {
+                "txgio:geometry": {
+                  "$ref": "https://geojson.org/schema/Geometry.json"
+                },
+                "txgio:collection_id": {
+                    "title": "Collection ID",
+                    "description": "The ID (uuid) of the collection.",
+                    "type": "string"
+                },
+                "txgio:categories": {
+                    "$ref": "txgio.json"
+                },
+                "txgio:acquisition_date": {
+                    "title": "Acquisition Date",
+                    "description": "Date this collection was acquired.",
+                    "type": ["string", "null"]
+                },
+                "txgio:authoritative": {
+                    "title": "Authoritative",
+                    "description": "Authoritative",
+                    "type": "boolean"
+                },
+                "txgio:availability": {
+                    "title": "Availability",
+                    "description": "Availability of this collection.",
+                    "type": ["string", "null"]
+                },
+                "txgio:band_types": {
+                    "title": "Band Types",
+                    "description": "Band types.",
+                    "type": ["string", "null"]
+                },
+                "txgio:carto_map_id": {
+                    "title": "Carto Map ID",
+                    "description": "Carto Map ID",
+                    "type": ["string", "null"]
+                },
+                "txgio:counties": {
+                    "title": "Counties",
+                    "description": "Counties",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "txgio:coverage_extent": {
+                    "title": "Coverage extent",
+                    "description": "Coverage extent",
+                    "type": ["string", "null"]
+                },
+                "txgio:data_types": {
+                    "title": "Data Types",
+                    "description": "Data types of the resources in the collection.",
+                    "type": ["string", "null"]
+                },
+                "txgio:file_type": {
+                    "title": "File Type",
+                    "description": "The file type of this collection.",
+                    "type": ["string", "null"]
+                },
+                "txgio:images": {
+                    "title": "Images",
+                    "description": "Images",
+                    "type": ["string", "null"]
+                },
+                "txgio:known_issues": {
+                    "title": "Known Issues",
+                    "description": "Known issues for this collection.",
+                    "type": ["string", "null"]
+                },
+                "txgio:license_abbreviation": {
+                    "title": "License Abbreviation",
+                    "description": "A shorthand abbreviation of the license this imagery is distributed under..",
+                    "type": ["string", "null"]
+                },
+                "txgio:license_url": {
+                    "title": "License Url",
+                    "description": "URL of the license.",
+                    "type": ["string", "null"]
+                },
+                "txgio:lidar_breaklines_url": {
+                    "title": "Lidar Breaklines URL",
+                    "description": "Lidar Breaklines URL",
+                    "type": ["string", "null"]
+                },
+                "txgio:lidar_buildings_url": {
+                    "title": "Lidar Buildings Url",
+                    "description": "Lidar Buildings Url",
+                    "type": ["string", "null"]
+                },
+                "txgio:name": {
+                    "title": "Name",
+                    "description": "Collection Name",
+                    "type": ["string", "null"]
+                },
+                "txgio:oe_service_names": {
+                    "title": "OE Service Names",
+                    "description": "OE Service Names",
+                    "type": ["string", "null"]
+                },
+                "txgio:oe_service_urls": {
+                    "title": "OE Service Urls",
+                    "description": "OE Service Urls",
+                    "type": ["string", "null"]
+                },
+               "txgio:popup_link": {
+                    "title": "Popup Link",
+                    "description": "Popup Link",
+                    "type": ["string", "null"]
+                },
+                "txgio:public": {
+                    "title": "Public",
+                    "description": "Public?",
+                    "type": "boolean"
+                },
+                "txgio:publication_date": {
+                    "title": "Publication Date",
+                    "description": "Publication Date",
+                    "type": ["string", "null"]
+                },
+                "txgio:recommended_use": {
+                    "title": "Recommended Use",
+                    "description": "Recommended Use",
+                    "type": ["string", "null"]
+                },
+                "txgio:resolution": {
+                    "title": "Resolution",
+                    "description": "Resolution",
+                    "type": ["string", "null"]
+                },
+                "txgio:resource_types": {
+                    "title": "Resource Types",
+                    "description": "Resource Types",
+                    "type": ["string", "null"]
+                },
+                "txgio:source_abbreviation": {
+                    "title": "Source Abbreviation",
+                    "description": "Source Abbreviation",
+                    "type": ["string", "null"]
+                },
+                "txgio:source_contact": {
+                    "title": "Source Contact",
+                    "description": "Source Contact",
+                    "type": ["string", "null"]
+                },
+                "txgio:source_data_website": {
+                    "title": "Source Data Website",
+                    "description": "Source Data Website",
+                    "type": ["string", "null"]
+                },
+                "txgio:source_name": {
+                    "title": "Source Name",
+                    "description": "Source Name",
+                    "type": ["string", "null"]
+                },
+                "txgio:source_website": {
+                    "title": "Source Website",
+                    "description": "Source Website",
+                    "type": ["string", "null"]
+                },
+                "txgio:spatial_reference": {
+                    "title": "Spatial Reference",
+                    "description": "Spatial Reference",
+                    "type": ["string", "null"]
+                },
+                "txgio:template": {
+                    "title": "Template",
+                    "description": "Template",
+                    "type": ["string", "null"]
+                },
+                "txgio:short_description": {
+                    "title": "Short Description",
+                    "description": "Short Description",
+                    "type": ["string", "null"]
+                },
+                "txgio:description": {
+                    "title": "Description",
+                    "description": "Description",
+                    "type": ["string", "null"]
+                },
+                "txgio:md_filename": {
+                    "title": "MD Filename",
+                    "description": "MD Filename",
+                    "type": ["string", "null"]
+                },
+                "txgio:tags": {
+                    "title": "Tags",
+                    "description": "Tags the collection belongs to.",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
