@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://raw.githubusercontent.com/TNRIS/stac_extensions_txgio/refs/heads/main/txgio.json",
+    "$id": "https://data.tnris.org/schema.json",
     "title": "TNRIS STAC schema",
     "description": "Metadata STAC Extension for STAC Items and STAC Collections pertaining to TxGIO. Meant to be used on collection.",
     "type": "object",
@@ -20,7 +20,7 @@
                     "type": "string"
                 },
                 "txgio:categories": {
-                    "$ref": "./categories_enum.json"
+                    "$ref": "txgio.json"
                 },
                 "txgio:acquisition_date": {
                     "title": "Acquisition Date",
@@ -50,6 +50,14 @@
                 "txgio:counties": {
                     "title": "Counties",
                     "description": "Counties",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "txgio:spatial_keywords": {
+                    "title": "Spatial Keywords",
+                    "description": "Spatial Keywords",
                     "type": "array",
                     "items": {
                         "type": "string"
