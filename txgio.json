@@ -20,7 +20,11 @@
                     "type": "string"
                 },
                 "txgio:categories": {
-                    "$ref": "txgio.json"
+                    "$ref": "txgio.json",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
                 },
                 "txgio:acquisition_date": {
                     "title": "Acquisition Date",
