@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://data.tnris.org/schema.json",
+    "$id": "https://raw.githubusercontent.com/txgio.json",
     "title": "TNRIS STAC schema",
     "description": "Metadata STAC Extension for STAC Items and STAC Collections pertaining to TxGIO. Meant to be used on collection.",
     "type": "object",
