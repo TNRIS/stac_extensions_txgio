@@ -4,5 +4,8 @@
     "title": "Categories",
     "description": "An array of categories this collection belongs to.",
     "type": "array",
+    "items": {
+        "type": "string"
+    }
     "enum": ["placeholder"]
 }
