@@ -22,7 +22,7 @@
                 "txgio:categories": {
                     "title": "Categories",
                     "description": "The Categories.",
-                    "$ref": "txgio.json",
+                    "$ref": "categories_enum.json",
                     "type": "array",
                     "items": {
                         "type": "string"
