@@ -6,6 +6,6 @@
     "type": "array",
     "items": {
         "type": "string",
-        "enum": ["imagery", "historic imagery", "elevation", "lidar", "basemap", "hydrography", "boundaries", "statewide"]
+        "enum": ["Imagery", "Historic Imagery", "Elevation", "Lidar", "Basemap", "Hydrography", "Boundaries", "Statewide"]
     }
 }
