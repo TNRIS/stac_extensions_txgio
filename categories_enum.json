@@ -5,7 +5,8 @@
     "description": "An array of categories this collection belongs to.",
     "type": "array",
     "items": {
-        "type": "string"
+        "type": "string",
+        "enum": ["imagery", "historic imagery", "elevation", "lidar", "basemap", "hydrography", "boundaries", "statewide"]
     },
-    "enum": ["imagery", "historic imagery", "elevation", "lidar", "basemap", "hydrography", "boundaries", "statewide"]
+    
 }
