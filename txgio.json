@@ -56,6 +56,7 @@
                 "txgio:counties": {
                     "title": "Counties",
                     "description": "Counties",
+                    "$ref": "counties_enum.json",
                     "type": "array",
                     "items": {
                         "type": "string"
