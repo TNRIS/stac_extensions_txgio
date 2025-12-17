@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/TNRIS/stac_extensions_txgio/refs/heads/main/counties_enum.json",
-    "$id": "https://data.tnris.org/schema.json",
+    "$id": "https://raw.githubusercontent.com/TNRIS/stac_extensions_txgio/refs/heads/main/schema.json",
     "title": "Counties",
     "description": "An array of counties in texas.",
     "type": "array",
