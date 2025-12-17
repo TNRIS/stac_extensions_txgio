@@ -20,13 +20,7 @@
                     "type": "string"
                 },
                 "txgio:categories": {
-                    "title": "Categories",
-                    "description": "The Categories.",
-                    "$ref": "categories_enum.json",
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
+                    "$ref": "categories_enum.json"
                 },
                 "txgio:acquisition_date": {
                     "title": "Acquisition Date",
@@ -54,13 +48,7 @@
                     "type": ["string", "null"]
                 },
                 "txgio:counties": {
-                    "title": "Counties",
-                    "description": "Counties",
-                    "$ref": "counties_enum.json",
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
+                    "$ref": "counties_enum.json"
                 },
                 "txgio:spatial_keywords": {
                     "title": "Spatial Keywords",
