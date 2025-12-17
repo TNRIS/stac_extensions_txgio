@@ -8,5 +8,4 @@
         "type": "string",
         "enum": ["imagery", "historic imagery", "elevation", "lidar", "basemap", "hydrography", "boundaries", "statewide"]
     },
-    
 }
