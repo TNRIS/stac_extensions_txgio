@@ -53,10 +53,7 @@
                 "txgio:spatial_keywords": {
                     "title": "Spatial Keywords",
                     "description": "Spatial Keywords",
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
+                    "type": ["string", "null"]
                 },
                 "txgio:coverage_extent": {
                     "title": "Coverage extent",
