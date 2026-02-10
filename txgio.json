@@ -11,9 +11,6 @@
         "txgio": {
             "required": ["txgio:collection_id", "txgio:categories"],
             "properties": {
-                "txgio:geometry": {
-                  "$ref": "https://geojson.org/schema/Geometry.json"
-                },
                 "txgio:collection_id": {
                     "title": "Collection ID",
                     "description": "The ID (uuid) of the collection.",
@@ -55,24 +52,18 @@
                     "description": "Spatial Keywords",
                     "type": ["string", "null"]
                 },
-                "txgio:coverage_extent": {
-                    "title": "Coverage extent",
-                    "description": "Coverage extent",
-                    "type": ["string", "null"]
-                },
                 "txgio:data_types": {
                     "title": "Data Types",
                     "description": "Data types of the resources in the collection.",
                     "type": ["string", "null"]
                 },
+                "txgio:layman_types": {
+                    "title": "Layman  Datatypes.",
+                    "description": "A type acronym for the people."
+                },
                 "txgio:file_type": {
                     "title": "File Type",
                     "description": "The file type of this collection.",
-                    "type": ["string", "null"]
-                },
-                "txgio:images": {
-                    "title": "Images",
-                    "description": "Images",
                     "type": ["string", "null"]
                 },
                 "txgio:known_issues": {
@@ -88,21 +79,6 @@
                 "txgio:license_url": {
                     "title": "License Url",
                     "description": "URL of the license.",
-                    "type": ["string", "null"]
-                },
-                "txgio:lidar_breaklines_url": {
-                    "title": "Lidar Breaklines URL",
-                    "description": "Lidar Breaklines URL",
-                    "type": ["string", "null"]
-                },
-                "txgio:lidar_buildings_url": {
-                    "title": "Lidar Buildings Url",
-                    "description": "Lidar Buildings Url",
-                    "type": ["string", "null"]
-                },
-                "txgio:name": {
-                    "title": "Name",
-                    "description": "Collection Name",
                     "type": ["string", "null"]
                 },
                 "txgio:oe_service_names": {
@@ -134,77 +110,6 @@
                     "title": "Recommended Use",
                     "description": "Recommended Use",
                     "type": ["string", "null"]
-                },
-                "txgio:resolution": {
-                    "title": "Resolution",
-                    "description": "Resolution",
-                    "type": ["string", "null"]
-                },
-                "txgio:resource_types": {
-                    "title": "Resource Types",
-                    "description": "Resource Types",
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                },
-                "txgio:source_abbreviation": {
-                    "title": "Source Abbreviation",
-                    "description": "Source Abbreviation",
-                    "type": ["string", "null"]
-                },
-                "txgio:source_contact": {
-                    "title": "Source Contact",
-                    "description": "Source Contact",
-                    "type": ["string", "null"]
-                },
-                "txgio:source_data_website": {
-                    "title": "Source Data Website",
-                    "description": "Source Data Website",
-                    "type": ["string", "null"]
-                },
-                "txgio:source_name": {
-                    "title": "Source Name",
-                    "description": "Source Name",
-                    "type": ["string", "null"]
-                },
-                "txgio:source_website": {
-                    "title": "Source Website",
-                    "description": "Source Website",
-                    "type": ["string", "null"]
-                },
-                "txgio:spatial_reference": {
-                    "title": "Spatial Reference",
-                    "description": "Spatial Reference",
-                    "type": ["string", "null"]
-                },
-                "txgio:template": {
-                    "title": "Template",
-                    "description": "Template",
-                    "type": ["string", "null"]
-                },
-                "txgio:short_description": {
-                    "title": "Short Description",
-                    "description": "Short Description",
-                    "type": ["string", "null"]
-                },
-                "txgio:description": {
-                    "title": "Description",
-                    "description": "Description",
-                    "type": ["string", "null"]
-                },
-                "txgio:md_filename": {
-                    "title": "MD Filename",
-                    "description": "MD Filename",
-                    "type": ["string", "null"]
-                },
-                "txgio:tags": {
-                    "title": "Tags",
-                    "description": "Tags the collection belongs to.",
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
                 }
             }
         }
