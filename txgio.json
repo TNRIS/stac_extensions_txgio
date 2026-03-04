@@ -59,7 +59,8 @@
                 },
                 "txgio:layman_types": {
                     "title": "Layman  Datatypes.",
-                    "description": "A type acronym for the people."
+                    "description": "A type acronym for the people.",
+                    "type": ["string", "null"]
                 },
                 "txgio:file_type": {
                     "title": "File Type",
