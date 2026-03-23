@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "https://raw.githubusercontent.com/TNRIS/stac_extensions_txgio/refs/heads/main/txgio.json",
     "title": "TNRIS STAC schema",
-    "description": "Metadata STAC Extension for STAC Items and STAC Collections pertaining to TxGIO. Meant to be used on collection.",
+    "description": "Metadata STAC Extension for STAC Items and STAC Collections pertaining to all TxGIO Collections. Meant to be used on collection.",
     "type": "object",
     "allOf": [
         {"$ref": "#/definitions/txgio"}
@@ -24,24 +24,10 @@
                     "description": "Date this collection was acquired.",
                     "type": ["string", "null"]
                 },
-                "txgio:authoritative": {
-                    "title": "Authoritative",
-                    "description": "Authoritative",
-                    "type": "boolean"
-                },
+
                 "txgio:availability": {
                     "title": "Availability",
                     "description": "Availability of this collection.",
-                    "type": ["string", "null"]
-                },
-                "txgio:band_types": {
-                    "title": "Band Types",
-                    "description": "Band types.",
-                    "type": ["string", "null"]
-                },
-                "txgio:carto_map_id": {
-                    "title": "Carto Map ID",
-                    "description": "Carto Map ID",
                     "type": ["string", "null"]
                 },
                 "txgio:counties": {
@@ -79,21 +65,6 @@
                 "txgio:license_url": {
                     "title": "License Url",
                     "description": "URL of the license.",
-                    "type": ["string", "null"]
-                },
-                "txgio:oe_service_names": {
-                    "title": "OE Service Names",
-                    "description": "OE Service Names",
-                    "type": ["string", "null"]
-                },
-                "txgio:oe_service_urls": {
-                    "title": "OE Service Urls",
-                    "description": "OE Service Urls",
-                    "type": ["string", "null"]
-                },
-               "txgio:popup_link": {
-                    "title": "Popup Link",
-                    "description": "Popup Link",
                     "type": ["string", "null"]
                 },
                 "txgio:public": {
