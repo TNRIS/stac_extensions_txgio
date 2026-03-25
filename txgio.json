@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "https://raw.githubusercontent.com/TNRIS/stac_extensions_txgio/refs/heads/main/txgio.json",
     "title": "TNRIS STAC schema",
-    "description": "Metadata STAC Extension for STAC Items and STAC Collections pertaining to TxGIO. Meant to be used on collection.",
+    "description": "Metadata STAC Extension for STAC Items and STAC Collections pertaining to all TxGIO Collections. Meant to be used on collection.",
     "type": "object",
     "allOf": [
         {"$ref": "#/definitions/txgio"}
@@ -11,28 +11,10 @@
         "txgio": {
             "required": ["txgio:collection_id", "txgio:categories"],
             "properties": {
-                "txgio:collection_id": {
-                    "title": "Collection ID",
-                    "description": "The ID (uuid) of the collection.",
-                    "type": "string"
-                },
-                "txgio:categories": {
-                    "$ref": "categories_enum.json"
-                },
-                "txgio:acquisition_date": {
-                    "title": "Acquisition Date",
-                    "description": "Date this collection was acquired.",
-                    "type": ["string", "null"]
-                },
                 "txgio:authoritative": {
                     "title": "Authoritative",
                     "description": "Authoritative",
                     "type": "boolean"
-                },
-                "txgio:availability": {
-                    "title": "Availability",
-                    "description": "Availability of this collection.",
-                    "type": ["string", "null"]
                 },
                 "txgio:band_types": {
                     "title": "Band Types",
@@ -95,21 +77,6 @@
                "txgio:popup_link": {
                     "title": "Popup Link",
                     "description": "Popup Link",
-                    "type": ["string", "null"]
-                },
-                "txgio:public": {
-                    "title": "Public",
-                    "description": "Public?",
-                    "type": "boolean"
-                },
-                "txgio:publication_date": {
-                    "title": "Publication Date",
-                    "description": "Publication Date",
-                    "type": ["string", "null"]
-                },
-                "txgio:recommended_use": {
-                    "title": "Recommended Use",
-                    "description": "Recommended Use",
                     "type": ["string", "null"]
                 }
             }

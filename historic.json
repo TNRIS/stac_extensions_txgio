@@ -1,0 +1,92 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/TNRIS/stac_extensions_txgio/refs/heads/main/current.json",
+    "title": "TNRIS STAC schema",
+    "description": "Metadata STAC Extension for STAC Items and STAC Collections pertaining to Current TxGIO Collections. Meant to be used on collection.",
+    "type": "object",
+    "allOf": [
+        {"$ref": "#/definitions/historic"}
+    ],
+    "definitions": {
+        "historic": {
+            "required": ["historic:collection_id", "historic:categories"],
+            "properties": {
+                "historic:scanned_index_ls4_links": {
+                    "title": "Scanned index ls4 links",
+                    "description": "Scanned index ls4 links.",
+                    "type": ["string", "null"]
+                },
+                "historic:from_date": {
+                    "title": "From Date",
+                    "description": "From Date.",
+                    "type": ["string", "null"]
+                },
+                "historic:photo_index_only": {
+                    "title": "Photo Index Only",
+                    "description": "Photo Index Only.",
+                    "type": ["string", "null"]
+                },
+                "historic:fully_scanned": {
+                    "title": "Fully Scanned",
+                    "description": "Fully Scanned.",
+                    "type": ["string", "null"]
+                },
+                "historic:index_service_url": {
+                    "title": "Index Service Url",
+                    "description": "Index Service Url.",
+                    "type": ["string", "null"]
+                },
+                "historic:frames_service_url": {
+                    "title": "Frames Service Url",
+                    "description": "Frames Service Url.",
+                    "type": ["string", "null"]
+                },
+                "historic:license_name": {
+                    "title": "License Name",
+                    "description": "License Name.",
+                    "type": ["string", "null"]
+                },
+                "historic:name": {
+                    "title": "Name",
+                    "description": "Name.",
+                    "type": ["string", "null"]
+                },
+                "historic:template": {
+                    "title": "Template",
+                    "description": "Template.",
+                    "type": ["string", "null"]
+                },
+                "historic:general_scale": {
+                    "title": "General Scale",
+                    "description": "General Scale.",
+                    "type": ["string", "null"]
+                },
+                "historic:about": {
+                    "title": "About",
+                    "description": "About.",
+                    "type": ["string", "null"]
+                },
+                "historic:products": {
+                    "title": "Products",
+                    "description": "Products.",
+                    "type": ["string", "null"]
+                },
+                "historic:availability": {
+                    "title": "Order Only",
+                    "description": "Order Only.",
+                    "type": ["string", "null"]
+                },
+                "historic:recommended_use": {
+                    "title": "Recommended Use",
+                    "description": "Recommended Use.",
+                    "type": ["string", "null"]
+                },
+                "historic:media_type": {
+                    "title": "Media Type",
+                    "description": "Media Type.",
+                    "type": ["string", "null"]
+                }
+            }
+        }
+    }
+}

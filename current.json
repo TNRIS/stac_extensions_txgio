@@ -1,0 +1,99 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/TNRIS/stac_extensions_txgio/refs/heads/main/current.json",
+    "title": "TNRIS STAC schema",
+    "description": "Metadata STAC Extension for STAC Items and STAC Collections pertaining to Current TxGIO Collections. Meant to be used on collection.",
+    "type": "object",
+    "allOf": [
+        {"$ref": "#/definitions/current"}
+    ],
+    "definitions": {
+        "current": {
+            "required": ["current:collection_id", "current:categories"],
+            "properties": {
+                "current:acquisition_date": {
+                    "title": "Acquisition Date",
+                    "description": "Date this collection was acquired.",
+                    "type": ["string", "null"]
+                },
+                "current:availability": {
+                    "title": "Availability",
+                    "description": "Availability of this collection.",
+                    "type": ["string", "null"]
+                },
+                "current:public": {
+                    "title": "Public",
+                    "description": "Public?",
+                    "type": "boolean"
+                },
+                "current:source_name": {
+                    "title": "Source Name",
+                    "description": "Source Name",
+                    "type": "string"
+                },
+                "current:source_abbreviation": {
+                    "title": "Source Abbreviation",
+                    "description": "Source Abbreviation",
+                    "type": "string"
+                },
+                "current:license_abbreviation": {
+                    "title": "License Abbreviation",
+                    "description": "A shorthand abbreviation of the license this imagery is distributed under..",
+                    "type": ["string", "null"]
+                },
+                "current:counties": {
+                    "$ref": "counties_enum.json"
+                },
+                "current:categories": {
+                    "$ref": "categories_enum.json"
+                },
+                "current:collection_id": {
+                    "title": "Collection ID",
+                    "description": "The ID (uuid) of the collection.",
+                    "type": "string"
+                },
+                "current:license_url": {
+                    "title": "License Url",
+                    "description": "URL of the license.",
+                    "type": ["string", "null"]
+                },
+                "current:recommended_use": {
+                    "title": "Recommended Use",
+                    "description": "Recommended Use",
+                    "type": ["string", "null"]
+                },
+
+                
+                "current:spatial_keywords": {
+                    "title": "Spatial Keywords",
+                    "description": "Spatial Keywords",
+                    "type": ["string", "null"]
+                },
+                "current:data_types": {
+                    "title": "Data Types",
+                    "description": "Data types of the resources in the collection.",
+                    "type": ["string", "null"]
+                },
+                "current:layman_types": {
+                    "title": "Layman  Datatypes.",
+                    "description": "A type acronym for the people."
+                },
+                "current:file_type": {
+                    "title": "File Type",
+                    "description": "The file type of this collection.",
+                    "type": ["string", "null"]
+                },
+                "current:known_issues": {
+                    "title": "Known Issues",
+                    "description": "Known issues for this collection.",
+                    "type": ["string", "null"]
+                },
+                "current:publication_date": {
+                    "title": "Publication Date",
+                    "description": "Publication Date",
+                    "type": ["string", "null"]
+                }
+            }
+        }
+    }
+}
