@@ -26,6 +26,44 @@
                     "description": "Carto Map ID",
                     "type": ["string", "null"]
                 },
+                "txgio:counties": {
+                    "$ref": "counties_enum.json"
+                },
+                "txgio:spatial_keywords": {
+                    "title": "Spatial Keywords",
+                    "description": "Spatial Keywords",
+                    "type": ["string", "null"]
+                },
+                "txgio:data_types": {
+                    "title": "Data Types",
+                    "description": "Data types of the resources in the collection.",
+                    "type": ["string", "null"]
+                },
+                "txgio:layman_types": {
+                    "title": "Layman  Datatypes.",
+                    "description": "A type acronym for the people.",
+                    "type": ["string", "null"]
+                },
+                "txgio:file_type": {
+                    "title": "File Type",
+                    "description": "The file type of this collection.",
+                    "type": ["string", "null"]
+                },
+                "txgio:known_issues": {
+                    "title": "Known Issues",
+                    "description": "Known issues for this collection.",
+                    "type": ["string", "null"]
+                },
+                "txgio:license_abbreviation": {
+                    "title": "License Abbreviation",
+                    "description": "A shorthand abbreviation of the license this imagery is distributed under..",
+                    "type": ["string", "null"]
+                },
+                "txgio:license_url": {
+                    "title": "License Url",
+                    "description": "URL of the license.",
+                    "type": ["string", "null"]
+                },
                 "txgio:oe_service_names": {
                     "title": "OE Service Names",
                     "description": "OE Service Names",
