@@ -11,75 +11,34 @@
         "txgio": {
             "required": ["txgio:collection_id", "txgio:categories"],
             "properties": {
-                "txgio:collection_id": {
-                    "title": "Collection ID",
-                    "description": "The ID (uuid) of the collection.",
-                    "type": "string"
-                },
-                "txgio:categories": {
-                    "$ref": "categories_enum.json"
-                },
-                "txgio:acquisition_date": {
-                    "title": "Acquisition Date",
-                    "description": "Date this collection was acquired.",
-                    "type": ["string", "null"]
-                },
-
-                "txgio:availability": {
-                    "title": "Availability",
-                    "description": "Availability of this collection.",
-                    "type": ["string", "null"]
-                },
-                "txgio:counties": {
-                    "$ref": "counties_enum.json"
-                },
-                "txgio:spatial_keywords": {
-                    "title": "Spatial Keywords",
-                    "description": "Spatial Keywords",
-                    "type": ["string", "null"]
-                },
-                "txgio:data_types": {
-                    "title": "Data Types",
-                    "description": "Data types of the resources in the collection.",
-                    "type": ["string", "null"]
-                },
-                "txgio:layman_types": {
-                    "title": "Layman  Datatypes.",
-                    "description": "A type acronym for the people."
-                },
-                "txgio:file_type": {
-                    "title": "File Type",
-                    "description": "The file type of this collection.",
-                    "type": ["string", "null"]
-                },
-                "txgio:known_issues": {
-                    "title": "Known Issues",
-                    "description": "Known issues for this collection.",
-                    "type": ["string", "null"]
-                },
-                "txgio:license_abbreviation": {
-                    "title": "License Abbreviation",
-                    "description": "A shorthand abbreviation of the license this imagery is distributed under..",
-                    "type": ["string", "null"]
-                },
-                "txgio:license_url": {
-                    "title": "License Url",
-                    "description": "URL of the license.",
-                    "type": ["string", "null"]
-                },
-                "txgio:public": {
-                    "title": "Public",
-                    "description": "Public?",
+                "txgio:authoritative": {
+                    "title": "Authoritative",
+                    "description": "Authoritative",
                     "type": "boolean"
                 },
-                "txgio:publication_date": {
-                    "title": "Publication Date",
-                    "description": "Publication Date",
+                "txgio:band_types": {
+                    "title": "Band Types",
+                    "description": "Band types.",
                     "type": ["string", "null"]
                 },
-                "txgio:recommended_use": {
-                    "title": "Recommended Use",
-                    "description": "Recommended Use",
+                "txgio:carto_map_id": {
+                    "title": "Carto Map ID",
+                    "description": "Carto Map ID",
+                    "type": ["string", "null"]
+                },
+                "txgio:oe_service_names": {
+                    "title": "OE Service Names",
+                    "description": "OE Service Names",
+                    "type": ["string", "null"]
+                },
+                "txgio:oe_service_urls": {
+                    "title": "OE Service Urls",
+                    "description": "OE Service Urls",
+                    "type": ["string", "null"]
+                },
+               "txgio:popup_link": {
+                    "title": "Popup Link",
+                    "description": "Popup Link",
                     "type": ["string", "null"]
                 }
             }

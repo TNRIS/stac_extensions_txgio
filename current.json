@@ -11,34 +11,86 @@
         "current": {
             "required": ["current:collection_id", "current:categories"],
             "properties": {
-                "current:authoritative": {
-                    "title": "Authoritative",
-                    "description": "Authoritative",
+                "current:acquisition_date": {
+                    "title": "Acquisition Date",
+                    "description": "Date this collection was acquired.",
+                    "type": ["string", "null"]
+                },
+                "current:availability": {
+                    "title": "Availability",
+                    "description": "Availability of this collection.",
+                    "type": ["string", "null"]
+                },
+                "current:public": {
+                    "title": "Public",
+                    "description": "Public?",
                     "type": "boolean"
                 },
-                "current:band_types": {
-                    "title": "Band Types",
-                    "description": "Band types.",
+                "current:source_name": {
+                    "title": "Source Name",
+                    "description": "Source Name",
+                    "type": "string"
+                },
+                "current:source_abbreviation": {
+                    "title": "Source Abbreviation",
+                    "description": "Source Abbreviation",
+                    "type": "string"
+                },
+                "current:license_abbreviation": {
+                    "title": "License Abbreviation",
+                    "description": "A shorthand abbreviation of the license this imagery is distributed under..",
                     "type": ["string", "null"]
                 },
-                "current:carto_map_id": {
-                    "title": "Carto Map ID",
-                    "description": "Carto Map ID",
+                "current:counties": {
+                    "$ref": "counties_enum.json"
+                },
+                "current:categories": {
+                    "$ref": "categories_enum.json"
+                },
+                "current:collection_id": {
+                    "title": "Collection ID",
+                    "description": "The ID (uuid) of the collection.",
+                    "type": "string"
+                },
+                "current:license_url": {
+                    "title": "License Url",
+                    "description": "URL of the license.",
                     "type": ["string", "null"]
                 },
-                "current:oe_service_names": {
-                    "title": "OE Service Names",
-                    "description": "OE Service Names",
+                "current:recommended_use": {
+                    "title": "Recommended Use",
+                    "description": "Recommended Use",
                     "type": ["string", "null"]
                 },
-                "current:oe_service_urls": {
-                    "title": "OE Service Urls",
-                    "description": "OE Service Urls",
+
+                
+                "current:spatial_keywords": {
+                    "title": "Spatial Keywords",
+                    "description": "Spatial Keywords",
                     "type": ["string", "null"]
                 },
-               "current:popup_link": {
-                    "title": "Popup Link",
-                    "description": "Popup Link",
+                "current:data_types": {
+                    "title": "Data Types",
+                    "description": "Data types of the resources in the collection.",
+                    "type": ["string", "null"]
+                },
+                "current:layman_types": {
+                    "title": "Layman  Datatypes.",
+                    "description": "A type acronym for the people."
+                },
+                "current:file_type": {
+                    "title": "File Type",
+                    "description": "The file type of this collection.",
+                    "type": ["string", "null"]
+                },
+                "current:known_issues": {
+                    "title": "Known Issues",
+                    "description": "Known issues for this collection.",
+                    "type": ["string", "null"]
+                },
+                "current:publication_date": {
+                    "title": "Publication Date",
+                    "description": "Publication Date",
                     "type": ["string", "null"]
                 }
             }
