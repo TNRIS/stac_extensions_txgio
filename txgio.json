@@ -40,6 +40,151 @@
                     "title": "Popup Link",
                     "description": "Popup Link",
                     "type": ["string", "null"]
+                },
+                "txgio:media_type": {
+                    "title": "Media Type",
+                    "description": "Media Type.",
+                    "type": ["string", "null"]
+                },
+                "txgio:scanned_index_ls4_links": {
+                    "title": "Scanned index ls4 links",
+                    "description": "Scanned index ls4 links.",
+                    "type": ["string", "null"]
+                },
+                "txgio:from_date": {
+                    "title": "From Date",
+                    "description": "From Date.",
+                    "type": ["string", "null"]
+                },
+                "txgio:photo_index_only": {
+                    "title": "Photo Index Only",
+                    "description": "Photo Index Only.",
+                    "type": ["string", "null"]
+                },
+                "txgio:fully_scanned": {
+                    "title": "Fully Scanned",
+                    "description": "Fully Scanned.",
+                    "type": ["string", "null"]
+                },
+                "txgio:index_service_url": {
+                    "title": "Index Service Url",
+                    "description": "Index Service Url.",
+                    "type": ["string", "null"]
+                },
+                "txgio:frames_service_url": {
+                    "title": "Frames Service Url",
+                    "description": "Frames Service Url.",
+                    "type": ["string", "null"]
+                },
+                "txgio:license_name": {
+                    "title": "License Name",
+                    "description": "License Name.",
+                    "type": ["string", "null"]
+                },
+                "txgio:name": {
+                    "title": "Name",
+                    "description": "Name.",
+                    "type": ["string", "null"]
+                },
+                "txgio:template": {
+                    "title": "Template",
+                    "description": "Template.",
+                    "type": ["string", "null"]
+                },
+                "txgio:general_scale": {
+                    "title": "General Scale",
+                    "description": "General Scale.",
+                    "type": ["string", "null"]
+                },
+                "txgio:about": {
+                    "title": "About",
+                    "description": "About.",
+                    "type": ["string", "null"]
+                },
+                "txgio:products": {
+                    "title": "Products",
+                    "description": "Products.",
+                    "type": ["string", "null"]
+                },
+                "txgio:recommended_use": {
+                    "title": "Recommended Use",
+                    "description": "Recommended Use.",
+                    "type": ["string", "null"]
+                },
+                "txgio:acquisition_date": {
+                    "title": "Acquisition Date",
+                    "description": "Date this collection was acquired.",
+                    "type": ["string", "null"]
+                },
+                "txgio:availability": {
+                    "title": "Availability",
+                    "description": "Availability of this collection.",
+                    "type": ["string", "null"]
+                },
+                "txgio:public": {
+                    "title": "Public",
+                    "description": "Public?",
+                    "type": "boolean"
+                },
+                "txgio:source_name": {
+                    "title": "Source Name",
+                    "description": "Source Name",
+                    "type": "string"
+                },
+                "txgio:source_abbreviation": {
+                    "title": "Source Abbreviation",
+                    "description": "Source Abbreviation",
+                    "type": "string"
+                },
+                "txgio:license_abbreviation": {
+                    "title": "License Abbreviation",
+                    "description": "A shorthand abbreviation of the license this imagery is distributed under..",
+                    "type": ["string", "null"]
+                },
+                "txgio:counties": {
+                    "$ref": "counties_enum.json"
+                },
+                "txgio:categories": {
+                    "$ref": "categories_enum.json"
+                },
+                "txgio:collection_id": {
+                    "title": "Collection ID",
+                    "description": "The ID (uuid) of the collection.",
+                    "type": "string"
+                },
+                "txgio:license_url": {
+                    "title": "License Url",
+                    "description": "URL of the license.",
+                    "type": ["string", "null"]
+                },
+                "txgio:spatial_keywords": {
+                    "title": "Spatial Keywords",
+                    "description": "Spatial Keywords",
+                    "type": ["string", "null"]
+                },
+                "txgio:data_types": {
+                    "title": "Data Types",
+                    "description": "Data types of the resources in the collection.",
+                    "type": ["string", "null"]
+                },
+                "txgio:layman_types": {
+                    "title": "Layman  Datatypes.",
+                    "description": "A type acronym for the people."
+                },
+                "txgio:file_type": {
+                    "title": "File Type",
+                    "description": "The file type of this collection.",
+                    "type": ["string", "null"]
+                },
+                "txgio:known_issues": {
+                    "title": "Known Issues",
+                    "description": "Known issues for this collection.",
+                    "type": ["string", "null"]
+                },
+                "txgio:publication_date": {
+                    "title": "Publication Date",
+                    "description": "Publication Date",
+                    "type": ["string", "null"]
                 }
             }
         }
