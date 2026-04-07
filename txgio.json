@@ -25,6 +25,10 @@
                 "txgio:categories": {
                     "$ref": "categories_enum.json"
                 },
+                "txgio:geometry": {
+                    "title": "Geometry",
+                    "$ref": "https://geojson.org/schema/GeoJSON.json"
+                },
                 "txgio:notes": {
                     "title": "Notes",
                     "type": "string"
