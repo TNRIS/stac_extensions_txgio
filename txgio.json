@@ -9,75 +9,83 @@
     ],
     "definitions": {
         "txgio": {
-            "required": ["txgio:collection_id", "txgio:categories"],
+            "required": ["txgio:categories", "txgio:spatial_reference", "txgio:s_three_bucket_key", "txgio:public", "txgio:availability", "txgio:last_modified", "txgio:last_edited_by", "txgio:template"],
             "properties": {
-                "txgio:authoritative": {
-                    "title": "Authoritative",
-                    "description": "Authoritative",
-                    "type": "boolean"
+                "txgio:collection_id": {
+                    "title": "Collection ID",
+                    "description": "Legacy collection id from api.",
+                    "type": "string"
                 },
-                "txgio:band_types": {
+                "txgio:publication_date": {
+                    "title": "Publication Date",
+                    "description": "Publication Date",
+                    "type": "string",
+                    "format": "date"
+                },
+                "txgio:categories": {
+                    "$ref": "categories_enum.json"
+                },
+                "txgio:geometry": {
+                    "title": "Geometry",
+                    "$ref": "https://geojson.org/schema/GeoJSON.json"
+                },
+                "txgio:notes": {
+                    "title": "Notes",
+                    "type": "string"
+                },
+                "txgio:spatial_reference": {
+                    "title": "Spatial Reference",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "txgio:resolution": {
+                    "title": "Resolution",
+                    "type": "string"
+                },
+                "txgio:bands": {
                     "title": "Band Types",
-                    "description": "Band types.",
-                    "type": ["string", "null"]
+                    "type": "array"
                 },
-                "txgio:carto_map_id": {
-                    "title": "Carto Map ID",
-                    "description": "Carto Map ID",
-                    "type": ["string", "null"]
-                },
-                "txgio:counties": {
-                    "$ref": "counties_enum.json"
+                "txgio:citation": {
+                    "title": "Resolution",
+                    "type": "string"
                 },
                 "txgio:spatial_keywords": {
                     "title": "Spatial Keywords",
                     "description": "Spatial Keywords",
-                    "type": ["string", "null"]
+                    "type": "string"
                 },
-                "txgio:data_types": {
-                    "title": "Data Types",
-                    "description": "Data types of the resources in the collection.",
-                    "type": ["string", "null"]
+                "txgio:s_three_bucket_key": {
+                    "title": "S3 Key",
+                    "type": "string"
                 },
-                "txgio:layman_types": {
-                    "title": "Layman  Datatypes.",
-                    "description": "A type acronym for the people.",
-                    "type": ["string", "null"]
+                "txgio:public": {
+                    "title": "Public/Publish",
+                    "type": "boolean"
                 },
-                "txgio:file_type": {
-                    "title": "File Type",
-                    "description": "The file type of this collection.",
-                    "type": ["string", "null"]
+                "txgio:availability": {
+                    "title": "Availability",
+                    "description": "Availability of this collection.",
+                    "type": "boolean"
                 },
-                "txgio:known_issues": {
-                    "title": "Known Issues",
-                    "description": "Known issues for this collection.",
-                    "type": ["string", "null"]
+                "txgio:banner_text": {
+                    "title": "Banner Text",
+                    "type": "string"
                 },
-                "txgio:license_abbreviation": {
-                    "title": "License Abbreviation",
-                    "description": "A shorthand abbreviation of the license this imagery is distributed under..",
-                    "type": ["string", "null"]
+                "txgio:last_modified": {
+                    "title": "Last Modified",
+                    "type": "string",
+                    "format": "date"
                 },
-                "txgio:license_url": {
-                    "title": "License Url",
-                    "description": "URL of the license.",
-                    "type": ["string", "null"]
+                "txgio:last_edited_by": {
+                    "title": "Last Edited By",
+                    "type": "string"
                 },
-                "txgio:oe_service_names": {
-                    "title": "OE Service Names",
-                    "description": "OE Service Names",
-                    "type": ["string", "null"]
-                },
-                "txgio:oe_service_urls": {
-                    "title": "OE Service Urls",
-                    "description": "OE Service Urls",
-                    "type": ["string", "null"]
-                },
-               "txgio:popup_link": {
-                    "title": "Popup Link",
-                    "description": "Popup Link",
-                    "type": ["string", "null"]
+                "txgio:template": {
+                    "title": "Template",
+                    "type": "string"
                 }
             }
         }
