@@ -14,12 +14,12 @@
                 "txgio:collection_id": {
                     "title": "Collection ID",
                     "description": "Legacy collection id from api.",
-                    "type": "string"
+                    "type": ["string", "null"]
                 },
                 "txgio:publication_date": {
                     "title": "Publication Date",
                     "description": "Publication Date",
-                    "type": "string",
+                    "type": ["string", "null"],
                     "format": "date"
                 },
                 "txgio:categories": {
@@ -31,7 +31,11 @@
                 },
                 "txgio:notes": {
                     "title": "Notes",
-                    "type": "string"
+                    "type": ["string", "null"]
+                },
+                "txgio:scale": {
+                    "title": "Scale",
+                    "type": ["string", "null"]
                 },
                 "txgio:spatial_reference": {
                     "title": "Spatial Reference",
@@ -42,20 +46,20 @@
                 },
                 "txgio:resolution": {
                     "title": "Resolution",
-                    "type": "string"
+                    "type": ["string", "null"]
                 },
                 "txgio:bands": {
                     "title": "Band Types",
-                    "type": "array"
+                    "type": ["array", "null"]
                 },
                 "txgio:citation": {
                     "title": "Resolution",
-                    "type": "string"
+                    "type": ["string", "null"]
                 },
                 "txgio:spatial_keywords": {
                     "title": "Spatial Keywords",
                     "description": "Spatial Keywords",
-                    "type": "string"
+                    "type": ["string", "null"]
                 },
                 "txgio:s_three_bucket_key": {
                     "title": "S3 Key",
@@ -72,7 +76,7 @@
                 },
                 "txgio:banner_text": {
                     "title": "Banner Text",
-                    "type": "string"
+                    "type": ["string", "null"]
                 },
                 "txgio:last_modified": {
                     "title": "Last Modified",
