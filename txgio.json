@@ -90,6 +90,21 @@
                 "txgio:template": {
                     "title": "Template",
                     "type": "string"
+                },
+                "txgio:source": {
+                    "title": "Source",
+                    "type": "object",
+                    "properties": {
+                      "name": {"type": "string"},
+                      "abbreviation": {"type": ["string", "null"]},
+                      "website": {"type": ["string", "null"]},
+                      "data_website": {"type": ["string", "null"]},
+                      "contact": {"type": ["string", "null"]}
+                    }
+                },
+                "txgio:partners": {
+                    "title": "Partners",
+                    "type": "string"
                 }
             }
         }
