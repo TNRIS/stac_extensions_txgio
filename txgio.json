@@ -5,21 +5,38 @@
     "description": "Metadata STAC Extension for STAC Items and STAC Collections pertaining to all TxGIO Collections. Meant to be used on collection.",
     "type": "object",
     "allOf": [
-        {"$ref": "#/definitions/txgio"}
+        {
+            "$ref": "#/definitions/txgio"
+        }
     ],
     "definitions": {
         "txgio": {
-            "required": ["txgio:categories", "txgio:spatial_reference", "txgio:s_three_bucket_key", "txgio:public", "txgio:availability", "txgio:last_modified", "txgio:last_edited_by", "txgio:template"],
+            "required": [
+                "txgio:categories",
+                "txgio:spatial_reference",
+                "txgio:s_three_bucket_key",
+                "txgio:public",
+                "txgio:availability",
+                "txgio:last_modified",
+                "txgio:last_edited_by",
+                "txgio:template"
+            ],
             "properties": {
                 "txgio:collection_id": {
                     "title": "Collection ID",
                     "description": "Legacy collection id from api.",
-                    "type": ["string", "null"]
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "txgio:publication_date": {
                     "title": "Publication Date",
                     "description": "Publication Date",
-                    "type": ["string", "null"],
+                    "type": [
+                        "string",
+                        "null"
+                    ],
                     "format": "date"
                 },
                 "txgio:categories": {
@@ -31,11 +48,17 @@
                 },
                 "txgio:notes": {
                     "title": "Notes",
-                    "type": ["string", "null"]
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "txgio:scale": {
                     "title": "Scale",
-                    "type": ["string", "null"]
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "txgio:spatial_reference": {
                     "title": "Spatial Reference",
@@ -46,20 +69,32 @@
                 },
                 "txgio:resolution": {
                     "title": "Resolution",
-                    "type": ["string", "null"]
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "txgio:bands": {
                     "title": "Band Types",
-                    "type": ["array", "null"]
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "txgio:citation": {
                     "title": "Resolution",
-                    "type": ["string", "null"]
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "txgio:spatial_keywords": {
                     "title": "Spatial Keywords",
                     "description": "Spatial Keywords",
-                    "type": ["string", "null"]
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
                 },
                 "txgio:s_three_bucket_key": {
                     "title": "S3 Key",
@@ -76,7 +111,10 @@
                 },
                 "txgio:banner_text": {
                     "title": "Banner Text",
-                    "type": ["string", "null"]
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "txgio:last_modified": {
                     "title": "Last Modified",
@@ -95,16 +133,68 @@
                     "title": "Source",
                     "type": "object",
                     "properties": {
-                      "name": {"type": "string"},
-                      "abbreviation": {"type": ["string", "null"]},
-                      "website": {"type": ["string", "null"]},
-                      "data_website": {"type": ["string", "null"]},
-                      "contact": {"type": ["string", "null"]}
+                        "name": {
+                            "type": "string"
+                        },
+                        "abbreviation": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        },
+                        "website": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        },
+                        "data_website": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        },
+                        "contact": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        }
                     }
                 },
                 "txgio:partners": {
                     "title": "Partners",
                     "type": "string"
+                },
+                "txgio:products": {
+                    "type": "object",
+                    "title": "Products",
+                    "description": "Product metadata associated with the collection.",
+                    "properties": {
+                        "coverage": {
+                            "type": "string",
+                            "description": "Coverage type for the product."
+                        },
+                        "number_of_frames": {
+                            "type": "integer",
+                            "description": "Total number of frames."
+                        },
+                        "print_type": {
+                            "type": "string",
+                            "description": "Print type."
+                        },
+                        "frame_size": {
+                            "type": "string",
+                            "description": "Frame size."
+                        }
+                    },
+                    "required": [
+                        "coverage",
+                        "number_of_frames",
+                        "print_type",
+                        "frame_size"
+                    ],
+                    "additionalProperties": false
                 }
             }
         }
